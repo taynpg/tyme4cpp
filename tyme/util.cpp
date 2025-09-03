@@ -1,8 +1,18 @@
+// clang-format off
+
 #include "util.h"
 #include <regex>
 
-using namespace std;
+#if defined(_WIN32)
+#if __has_include(<corecrt_math_defines.h>)
+#include <corecrt_math_defines.h>
+#else
+#define _USE_MATH_DEFINES
+#include <cmath>
+#endif
+#endif
 
+using namespace std;
 
 namespace tyme::util {
     const double ShouXingUtil::PI_2 = 2 * M_PI;
