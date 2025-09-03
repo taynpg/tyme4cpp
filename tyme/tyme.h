@@ -6,10 +6,9 @@
 #include <string>
 #include <utility>
 
+namespace tyme {
 using namespace std;
 using namespace tyme::util;
-
-namespace tyme {
 /**
  * @brief 节日类型
  */

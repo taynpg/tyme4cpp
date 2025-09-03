@@ -12,9 +12,8 @@
 #endif
 #endif
 
-using namespace std;
-
 namespace tyme {
+using namespace std;
 bool AbstractCulture::equals(const Culture* o) const
 {
     return o && o->to_string() == to_string();
